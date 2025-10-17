@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/256/external-react-a-javascript-library-for-building-user-interfaces-logo-tritone-tal-revivo.png",
+    "title": "React",
+    "companyName": "Meta Platforms",
+    "id": 1,
+    "description": "A JavaScript library for building fast, interactive user interfaces using components.",
+    "size": 45,
+    "reviews": 12500,
+    "ratingAvg": 4.8,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 550 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 9300 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/javascript--v1.png",
+    "title": "JavaScript",
+    "companyName": "ECMA International",
+    "id": 2,
+    "description": "The most widely used scripting language for creating dynamic and interactive web content.",
+    "size": 30,
+    "reviews": 9800,
+    "ratingAvg": 4.7,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 6020 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/typescript.png",
+    "title": "TypeScript",
+    "companyName": "Microsoft",
+    "id": 3,
+    "description": "A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+    "size": 55,
+    "reviews": 7300,
+    "ratingAvg": 4.9,
+    "downloads": 4,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 4950 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/tailwind_css.png",
+    "title": "Tailwind CSS",
+    "companyName": "Tailwind Labs",
+    "id": 4,
+    "description": "A utility-first CSS framework for rapidly building modern, responsive user interfaces.",
+    "size": 25,
+    "reviews": 5400,
+    "ratingAvg": 4.8,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 3340 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/angularjs.png",
+    "title": "Angular",
+    "companyName": "Google",
+    "id": 5,
+    "description": "A powerful TypeScript-based web application framework for building scalable, enterprise-level apps.",
+    "size": 80,
+    "reviews": 6200,
+    "ratingAvg": 4.6,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 3740 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/bootstrap--v1.png",
+    "title": "Bootstrap",
+    "companyName": "Twitter",
+    "id": 6,
+    "description": "A popular front-end framework for building responsive, mobile-first websites using HTML, CSS, and JS.",
+    "size": 35,
+    "reviews": 8900,
+    "ratingAvg": 4.7,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 5470 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/256/external-mongodb-a-cross-platform-document-oriented-database-program-logo-filled-tal-revivo.png",
+    "title": "MongoDB",
+    "companyName": "MongoDB Inc.",
+    "id": 7,
+    "description": "A document-oriented NoSQL database used for high-volume data storage and scalability.",
+    "size": 200,
+    "reviews": 5600,
+    "ratingAvg": 4.7,
+    "downloads": 1,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 3190 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/firebase.png",
+    "title": "Firebase",
+    "companyName": "Google",
+    "id": 8,
+    "description": "A platform that helps you build, improve, and grow your apps with real-time databases and cloud tools.",
+    "size": 95,
+    "reviews": 6700,
+    "ratingAvg": 4.8,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 4250 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-shadow-tal-revivo.png",
+    "title": "Vue.js",
+    "companyName": "Evan You",
+    "id": 9,
+    "description": "An approachable, versatile, and performant JavaScript framework for building user interfaces.",
+    "size": 50,
+    "reviews": 7100,
+    "ratingAvg": 4.8,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 4750 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/python--v1.png",
+    "title": "Python",
+    "companyName": "Python Software Foundation",
+    "id": 10,
+    "description": "A powerful, easy-to-learn programming language used for web, data science, automation, and AI.",
+    "size": 120,
+    "reviews": 15000,
+    "ratingAvg": 4.9,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 11300 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/redux.png",
+    "title": "Redux",
+    "companyName": "Redux Core Team",
+    "id": 11,
+    "description": "A predictable state container for JavaScript apps, often used with React for state management.",
+    "size": 40,
+    "reviews": 4800,
+    "ratingAvg": 4.6,
+    "downloads": 1,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2580 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/256/c-plus-plus-logo.png",
+    "title": "C++",
+    "companyName": "ISO/IEC JTC1",
+    "id": 12,
+    "description": "A general-purpose programming language known for its performance, flexibility, and use in system software.",
+    "size": 150,
+    "reviews": 9400,
+    "ratingAvg": 4.7,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 5800 }
+    ]
+  }
+]
