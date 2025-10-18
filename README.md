@@ -1,4 +1,4 @@
-# 🚀 App Store - React Project
+# 🚀 Nexify - React Project
 
 This is a simple **Nexify** where users can view, install, and manage apps.  
 Built with **React**, **Tailwind CSS**, and several modern libraries for smooth UI and UX.
