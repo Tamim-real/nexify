@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import useApps from '../Components/hooks/useApps';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -15,16 +15,21 @@ const AppDetails = () => {
     const {id}= useParams();
     const {apps, loading, error} = useApps();
     const [active, setActive] = useState(false);
+    const navigate = useNavigate();
 
     
 
     const app = apps.find(a=> String(a.id)=== id);
 
       useEffect(() => {
+        const validIds = [1,2,3,4,5,6,7,8,9,10,11,12]; // তোমার 12 apps
+    if (!validIds.includes(Number(id))) {
+      navigate("/404"); // অথবা navigate("/error") বা show ErrorPage component
+    }
     const storedApps = JSON.parse(localStorage.getItem('installedApps')) || [];
    const isInstalled = storedApps.some(a => a && String(a.id) === id);
     setActive(isInstalled);
-  }, [id]);
+  }, [id, navigate]);
 
     if(loading) return <p>Loading...</p>
 

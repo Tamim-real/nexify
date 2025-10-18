@@ -1,6 +1,6 @@
 # 🚀 App Store - React Project
 
-This is a simple **React App Store** project where users can view, install, and manage apps.  
+This is a simple **Nexify** where users can view, install, and manage apps.  
 Built with **React**, **Tailwind CSS**, and several modern libraries for smooth UI and UX.
 
 ---
@@ -32,9 +32,3 @@ Built with **React**, **Tailwind CSS**, and several modern libraries for smooth 
 
 ---
 
-## ⚙️ Installation & Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/app-store.git
-   cd app-store

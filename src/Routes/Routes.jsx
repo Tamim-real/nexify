@@ -10,34 +10,17 @@ import InstalledApps from "../Pages/InstalledApps";
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path: '/',
     element: <MainLayout />,
     errorElement: <ErrorPage />,
     children: [
-       {
-         path:'/',
-        element: <Home />
-       },
-        {
-    path:'/apps',
-    element: <Apps />
+      { path: '', element: <Home /> },             // <-- no leading slash
+      { path: 'apps', element: <Apps /> },         // <-- no leading slash
+      { path: 'app/:id', element: <AppDetails /> },// <-- no leading slash
+      { path: 'installed-apps', element: <InstalledApps /> } // <-- no leading slash
+    ],
   },
- {
-   path: '/app/:id',
-   element: <AppDetails />,
-   errorElement: <ErrorPage />
- },
+]);
 
- {
-  path: '/installed-apps',
-  element: <InstalledApps />
- }
-
-    ]
-
-  },
- 
- 
-])
 
 export default router
