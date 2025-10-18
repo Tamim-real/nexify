@@ -3,6 +3,7 @@ import useApps from './hooks/useApps';
 import AppCard from './AppCard';
 import AppNotMatched from '../assets/App-Error.png';
 
+
 const Apps = () => {
   const { apps, loading } = useApps();
   const [search, setSearch] = useState('');
@@ -85,6 +86,7 @@ const Apps = () => {
           </div>
         )}
       </div>
+      
     </div>
   );
 };

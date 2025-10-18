@@ -22,7 +22,7 @@ const AppDetails = () => {
 
       useEffect(() => {
     const storedApps = JSON.parse(localStorage.getItem('installedApps')) || [];
-    const isInstalled = storedApps.some(a => String(a.id) === id);
+   const isInstalled = storedApps.some(a => a && String(a.id) === id);
     setActive(isInstalled);
   }, [id]);
 
@@ -45,7 +45,8 @@ const AppDetails = () => {
      let updatedApps = []
 
      if(existingApps){
-        const isDuplicate = existingApps.some(a => a.id === app.id);
+        const isDuplicate = existingApps.some(a => a && a.id === app.id);
+
      if(isDuplicate){
        setActive(true)
       

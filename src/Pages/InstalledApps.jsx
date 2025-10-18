@@ -7,10 +7,11 @@ import Swal from 'sweetalert2';
 const InstalledApps = () => {
     const [installedApp, setInstalledApp] = useState([]);
     const [sortOrder, setSortOrder]= useState('none')
-  useEffect(()=>{
-      const   savedApps = JSON.parse(localStorage.getItem('installedApps'));
-      if(savedApps) setInstalledApp(savedApps)
-  }, [])
+ useEffect(() => {
+  const savedApps = (JSON.parse(localStorage.getItem('installedApps')) || []).filter(Boolean);
+  setInstalledApp(savedApps);
+}, []);
+
 
   const sortedItem =(
     () =>{
@@ -27,7 +28,7 @@ const InstalledApps = () => {
   })()
 
 const handleRemove = (id) => {
-  const existingApps = JSON.parse(localStorage.getItem('installedApps'));
+  const existingApps = (JSON.parse(localStorage.getItem('installedApps')) || []).filter(Boolean);
 
   Swal.fire({
     title: 'Are you sure?',
@@ -83,22 +84,30 @@ const handleRemove = (id) => {
                 </label>
                 </div>
                 <div className='space-y-4'>
-                    {
-                        sortedItem.map(app=> (
-                            <div className='bg-gray-100 p-3 rounded-2xl flex gap-5 relative'>
-                        <img src={app.image} className='w-12' alt="" />
-                      <div>
-                          <h2 className='font-bold'>{app.title}</h2>
-                        <div className='flex gap-2 items-center'>
-                           <h2 className='text-green-400 bg-[#F1F5E8]  py-1 px-2 rounded'><FontAwesomeIcon icon={faDownload} />{app.downloads}</h2>
-                           <h2 className='text-[#FF8811] bg-[#FFF0E1] py-1 px-2 rounded'><FontAwesomeIcon icon={faStar} />{app.ratingAvg}</h2>
-                           <p>{app.size}</p>
-                        </div>
-                      </div>
-                     <button onClick={()=>handleRemove(app.id)} className="btn  mt-7 bg-[#00D390] text-white absolute left-[270px] bottom-[10px] lg:left-[1500px] lg:bottom-[20px]">Uninstall</button>
-                    </div>
-                        ))
-                    }
+                    {sortedItem.filter(Boolean).map(app => (
+  <div key={app.id} className='bg-gray-100 p-3 rounded-2xl flex gap-5 relative'>
+    <img src={app.image} className='w-12' alt="" />
+    <div>
+      <h2 className='font-bold'>{app.title}</h2>
+      <div className='flex gap-2 items-center'>
+        <h2 className='text-green-400 bg-[#F1F5E8] py-1 px-2 rounded'>
+          <FontAwesomeIcon icon={faDownload} /> {app.downloads}
+        </h2>
+        <h2 className='text-[#FF8811] bg-[#FFF0E1] py-1 px-2 rounded'>
+          <FontAwesomeIcon icon={faStar} /> {app.ratingAvg}
+        </h2>
+        <p>{app.size}</p>
+      </div>
+    </div>
+    <button
+      onClick={() => handleRemove(app.id)}
+      className="btn mt-7 bg-[#00D390] text-white absolute left-[270px] bottom-[10px] lg:left-[1500px] lg:bottom-[20px]"
+    >
+      Uninstall
+    </button>
+  </div>
+))}
+
                 </div>
             </div>
         </div>

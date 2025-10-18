@@ -14,7 +14,7 @@ const ErrorPage = () => {
            <h2 className='text-4xl font-bold text-center'>Oops, page not found!</h2>
            <p className='text-gray-600 text-center mt-5'>The page you are looking for is not available.</p>
            <div className='text-center mt-5'>     
-            <NavLink to='/' className="btn  bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white mb-2">Go back</NavLink>
+            <NavLink to='/' className="btn  bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white mb-2">Go home</NavLink>
            </div>
            <Footer></Footer>
         </div>

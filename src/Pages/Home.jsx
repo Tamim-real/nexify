@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Components/Hero';
 import AppCard from '../Components/AppCard';
 import useApps from '../Components/hooks/useApps';
+import { Link } from 'react-router';
 
 const Home = () => {
     const {apps , loading, error} = useApps();
@@ -18,6 +19,9 @@ const Home = () => {
                         <AppCard key={app.id} app={app}/>
                     ))
                 }
+            </div>
+            <div className='text-center py-5'>
+                <Link to='/apps'><button className='btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white'>Show All Apps</button></Link>
             </div>
         </div>
     );

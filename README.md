@@ -1,16 +1,40 @@
-# React + Vite
+# 🚀 App Store - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **React App Store** project where users can view, install, and manage apps.  
+Built with **React**, **Tailwind CSS**, and several modern libraries for smooth UI and UX.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Features
 
-## React Compiler
+- 📱 Display list of available apps  
+- 🔍 Search functionality  
+- ⭐ Add and remove apps (using localStorage)  
+- 🧭 Page navigation with React Router  
+- ⏳ Loading spinner while navigating or fetching data  
+- ⚡ Toast notification for install/uninstall actions  
+- 💬 SweetAlert confirmation for uninstall  
+- 🎨 Clean and responsive UI with Tailwind CSS  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Library / Tool | Description |
+|-----------|----------------|-------------|
+| Frontend | **React** | UI Library |
+| Routing | **React Router DOM** | Page navigation and route management |
+| Styling | **Tailwind CSS** | Utility-first CSS framework |
+| Alerts | **SweetAlert2** | Beautiful confirmation dialogs |
+| Loading | **React Spinners** | Animated loading indicators |
+| Notifications | **React Hot Toast** | Simple toast notifications |
+| Storage | **LocalStorage API** | Save installed apps locally |
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/app-store.git
+   cd app-store
