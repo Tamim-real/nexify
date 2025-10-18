@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import useApps from './hooks/useApps';
 import AppCard from './AppCard';
 import AppNotMatched from '../assets/App-Error.png';
+import Loading from './Loading';
 
 
 const Apps = () => {
@@ -9,19 +10,34 @@ const Apps = () => {
   const [search, setSearch] = useState('');
   const [searchApps, setSearchApps] = useState([]);
   const [notMatched, setNotMatched] = useState(false);
+  const [searchLoading, setSearchLoading] = useState(false);
+
 
   // Handle search
-  useEffect(() => {
-    const term = search.trim().toLowerCase();
-    if (!loading) {
+useEffect(() => {
+  const term = search.trim().toLowerCase();
+
+  if (!loading) {
+    // search শুরু → spinner true
+    setSearchLoading(true);
+
+    // setTimeout দিয়ে simulate করা হচ্ছে delay (real API হলে fetch এর promise use করো)
+    const timeout = setTimeout(() => {
       const filteredApps = term
         ? apps.filter((app) => app.title.toLowerCase().includes(term))
         : apps;
 
       setSearchApps(filteredApps);
       setNotMatched(filteredApps.length === 0);
-    }
-  }, [search, apps, loading]);
+
+      // search শেষ → spinner false
+      setSearchLoading(false);
+    }, 300); // 300ms delay
+
+    return () => clearTimeout(timeout);
+  }
+}, [search, apps, loading]);
+
 
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -69,22 +85,22 @@ const Apps = () => {
         </div>
 
         {/* Loading Spinner */}
-        {loading ? (
-          <div className="flex justify-center py-10">
-            <span className="loading loading-bars loading-xl"></span>
-          </div>
-        ) : notMatched ? (
-          <div className="flex flex-col items-center py-10">
-            <img src={AppNotMatched} alt="No Match Found" className="w-64 mb-4" />
-            <p className="text-gray-600 text-lg font-semibold">No Apps Found</p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-4">
-            {searchApps.map((app) => (
-              <AppCard key={app.id} app={app} />
-            ))}
-          </div>
-        )}
+        {/* Loading Spinner */}
+{loading || searchLoading ? (  // <- এখানে searchLoading যোগ করলাম
+  <Loading></Loading>
+) : notMatched ? (
+  <div className="flex flex-col items-center py-10">
+    <img src={AppNotMatched} alt="No Match Found" className="w-64 mb-4" />
+    <p className="text-gray-600 text-lg font-semibold">No Apps Found</p>
+  </div>
+) : (
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-4">
+    {searchApps.map((app) => (
+      <AppCard key={app.id} app={app} />
+    ))}
+  </div>
+)}
+
       </div>
       
     </div>
