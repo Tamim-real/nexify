@@ -76,9 +76,9 @@ const AppDetails = () => {
                 <div className='flex gap-5 pt-10'>
                     <img src={image} alt="" />
                     <div>
-                        <h2 className='text-3xl font-bold'>{title}</h2>
+                        <h2 className='text-xl lg:text-3xl font-bold'>{title}</h2>
                         <p><span className='text-gray-600'>Developed by</span> <span className='font-bold bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent'>{companyName}</span></p>
-                        <div className='review flex mt-7 gap-6'>
+                        <div className='review flex flex-col lg:flex-row mt-7 gap-1 lg:gap-6'>
                         <div className='text-center'>
                             <FontAwesomeIcon icon={faDownload} className='text-4xl text-green-500' />
                         <p className='text-gray-600 text-[13px]'>{downloads}</p>
