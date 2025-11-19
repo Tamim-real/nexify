@@ -1,6 +1,12 @@
 # 🚀 Nexify - React Project
 
-This is a simple **Nexify** where users can view, install, and manage apps.  
+<p align="center">
+  <a href="https://app.netlify.com/projects/nexify01/" target="_blank">
+    🌐 Live Website
+  </a>
+</p>
+
+This is a simple **Nexify** project where users can view, install, and manage apps.  
 Built with **React**, **Tailwind CSS**, and several modern libraries for smooth UI and UX.
 
 ---
@@ -18,17 +24,27 @@ Built with **React**, **Tailwind CSS**, and several modern libraries for smooth 
 
 ---
 
-## 🛠️ Technologies Used
-
-| Category | Library / Tool | Description |
-|-----------|----------------|-------------|
-| Frontend | **React** | UI Library |
-| Routing | **React Router DOM** | Page navigation and route management |
-| Styling | **Tailwind CSS** | Utility-first CSS framework |
-| Alerts | **SweetAlert2** | Beautiful confirmation dialogs |
-| Loading | **React Spinners** | Animated loading indicators |
-| Notifications | **React Hot Toast** | Simple toast notifications |
-| Storage | **LocalStorage API** | Save installed apps locally |
+## 🛠️ Tech Stack
+<p align="center" style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+  <img src="https://skillicons.dev/icons?i=js" width="40" title="JavaScript" />
+  <img src="https://skillicons.dev/icons?i=react" width="40" title="React" />
+  <img src="https://skillicons.dev/icons?i=tailwind" width="40" title="Tailwind CSS" />
+  <img src="https://skillicons.dev/icons?i=netlify" width="40" title="Netlify" />
+</p>
 
 ---
 
+## 📂 Clone & Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Tamim-real/nexify.git
+
+# Navigate into the project directory
+cd nexify
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
